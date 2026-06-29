@@ -26,4 +26,4 @@ O usuário possui total autonomia sobre suas publicações. A qualquer momento, 
 A exclusão remove imediatamente o registro do banco de dados e apaga fisicamente todas as fotos e vídeos associados dos arquivos do servidor.
 
 ## 6. CONTATO E SUPORTE
-Para dúvidas sobre esta política ou solicitações adicionais sobre seus dados, entre em contato com o desenvolvedor responsável: Edirley Ferreira da Costa.
+Para dúvidas sobre esta política ou solicitações adicionais sobre seus dados, entre em contato com o desenvolvedor responsável: Edirley Ferreira da Costa através do email (edirley.costa.123@gmail.com).
