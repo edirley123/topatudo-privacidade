@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topa Tudo - O App do Produtor e Comerciante</title>
+    <style>
+        :root {
+            --verde-esmeralda: #0F9D58;
+            --verde-escuro: #0B663E;
+            --cinza-grafite: #2C3E50;
+            --fundo: #F8F9FA;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--fundo);
+            color: var(--cinza-grafite);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #EAEAEA;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: var(--verde-esmeralda);
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 18px;
+            color: #7F8C8D;
+            margin-bottom: 30px;
+        }
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--verde-esmeralda);
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(15, 157, 88, 0.3);
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .btn-download:hover {
+            background-color: var(--verde-escuro);
+            transform: translateY(-2px);
+        }
+        .btn-download span { margin-right: 10px; font-size: 22px; }
+        .instrucoes {
+            font-size: 13px;
+            color: #95A5A6;
+            margin-top: 10px;
+            text-align: left;
+            background: #F9F9F9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--verde-esmeralda);
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid #EAEAEA;
+            background: white;
+        }
+        footer a {
+            color: var(--cinza-grafite);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        footer a:hover { color: var(--verde-esmeralda); }
+        .politica-secao {
+            display: none;
+            text-align: left;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #EAEAEA;
+        }
+        .politica-secao:target { display: block; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="logo">Topa Tudo 🤠</div>
+            <div class="tagline">O aplicativo definitivo para comprar, vender e negociar na sua região!</div>
+            
+            <!-- 🔥 BOTÃO DE DOWNLOAD DO APK -->
+            <a href="app-release.apk" class="btn-download">
+                <span>📥</span> BAIXAR APP (ANDROID)
+            </a>
+
+            <div class="instrucoes">
+                <strong>💡 Como instalar no seu celular:</strong><br>
+                1. Clique no botão acima para baixar o arquivo.<br>
+                2. Ao abrir, se o Android avisar sobre "Fontes Desconhecidas", clique em <strong>Configurações</strong> e marque <strong>Permitir desta fonte</strong>.<br>
+                3. Prossiga com a instalação e abra o Topa Tudo!
+            </div>
+
+            <!-- Seção Oculta da Política de Privacidade (Abre ao clicar no link do rodapé) -->
+            <div id="politica" class="politica-secao">
+                <h2 style="margin-bottom: 15px; font-size: 20px;">Política de Privacidade</h2>
+                <p style="font-size: 14px; color: #555; margin-bottom: 10px;">O aplicativo Topa Tudo valoriza a privacidade dos seus usuários. Não coletamos, compartilhamos ou vendemos dados pessoais para terceiros sem autorização.</p>
+                <p style="font-size: 14px; color: #555; margin-bottom: 15px;">Os dados de contato fornecidos nos anúncios (como o número do WhatsApp) são de inteira responsabilidade do anunciante e servem exclusivamente para permitir a negociação direta de produtos.</p>
+                <a href="#" style="font-size: 14px; color: var(--verde-esmeralda); font-weight: bold; text-decoration: none;">↑ Voltar ao Topo</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Topa Tudo. Todos os direitos reservados.</p>
+        <div style="margin-top: 8px;">
+            <a href="#politica">Política de Privacidade</a> | 
+            <a href="mailto:edirley.costa123@gmail.com.br">Suporte por E-mail</a>
+        </div>
+    </footer>
+
+</body>
+</html>
